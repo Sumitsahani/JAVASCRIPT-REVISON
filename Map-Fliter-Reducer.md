@@ -1,6 +1,6 @@
 # Map, Reduce, and Filter in JavaScript
 
-### `Map`, `Reduce`, and `Filter` in Hinglish with Real-Life Examples:
+### `Map`, `Reduce`, and `Filter` in  Real-Life Examples:
 
 #### 1. **Map**:
 Jab humko ek list ke sabhi items ko modify karna ho toh `map` function ka use karte hain. Jaise maan lo tum supermarket gaye ho aur tumhari paas ek list hai items ki (e.g. doodh, bread, chips). Tumko price calculate karna hai har item ka 10% discount ke saath.
