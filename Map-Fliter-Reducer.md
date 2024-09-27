@@ -1,4 +1,4 @@
-```md
+
 # Map, Filter, and Reduce in JavaScript
 
 ## 1. Map
