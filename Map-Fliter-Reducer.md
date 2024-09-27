@@ -1,98 +1,107 @@
+# Map, Reduce, and Filter in JavaScript
 
-# Map, Filter, and Reduce in JavaScript
+### `Map`, `Reduce`, and `Filter` in Hinglish with Real-Life Examples:
 
-## 1. Map
+#### 1. **Map**:
+Jab humko ek list ke sabhi items ko modify karna ho toh `map` function ka use karte hain. Jaise maan lo tum supermarket gaye ho aur tumhari paas ek list hai items ki (e.g. doodh, bread, chips). Tumko price calculate karna hai har item ka 10% discount ke saath.
 
-`map` ek method hai jo ek nayi array banata hai by applying ek diya hua function har element pe original array ke.
-
-### Example:
 ```js
-const numbers = [1, 2, 3];
-const doubled = numbers.map(num => num * 2);
-console.log(doubled); // [2, 4, 6]
+const items = [100, 200, 150]; // Prices in Rs
+const discountedPrices = items.map(item => item * 0.9);
+console.log(discountedPrices); // [90, 180, 135]
 ```
+
+**Real-life Example**:
+Supermarket mein tumhne doodh (₹100), bread (₹200), aur chips (₹150) liye. Ab tumko sabka price calculate karna hai 10% discount ke saath. `map` ki madad se har item pe ye discount laga ke naya price milega.
 
 ---
 
-## 2. Filter
+#### 2. **Filter**:
+`Filter` ka use tab karte hain jab hum kisi list ke items ko filter karna chahte hain based on some condition. Jaise tumhare paas ek list hai fruits ki, aur tumhe sirf wo fruits chahiye jo "a" se start hote hain.
 
-`filter` ek method hai jo ek nayi array banata hai sirf un elements ke saath jo ek condition ko pass karte hain jo function mein define ki gayi hai.
-
-### Example:
 ```js
-const numbers = [1, 2, 3, 4, 5];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
-console.log(evenNumbers); // [2, 4]
+const fruits = ['apple', 'banana', 'mango', 'kiwi'];
+const filteredFruits = fruits.filter(fruit => fruit.startsWith('a'));
+console.log(filteredFruits); // ['apple']
 ```
+
+**Real-life Example**:
+Socho tum fruit shop gaye ho aur shopkeeper ke paas bahut saare fruits hain. Tumko sirf "a" se start hone wale fruits chahiye, toh tum `filter` use karke sirf "apple" nikal loge.
 
 ---
 
-## 3. Reduce
+#### 3. **Reduce**:
+`Reduce` tab use hota hai jab hum kisi list ke elements ko ek single value mein combine karna chahte hain. Socho tum restaurant gaye ho, aur tumhe total bill calculate karna hai.
 
-`reduce` ek method hai jo ek array ko single value mein reduce karta hai ek function ke zariye jo har element ka result accumulate karta hai.
-
-### Example:
 ```js
-const numbers = [1, 2, 3, 4];
-const sum = numbers.reduce((total, num) => total + num, 0);
-console.log(sum); // 10
+const prices = [100, 200, 150];
+const totalBill = prices.reduce((total, price) => total + price, 0);
+console.log(totalBill); // 450
 ```
+
+**Real-life Example**:
+Tum restaurant mein gaye aur tumne doodh (₹100), bread (₹200), aur chips (₹150) order kiya. Tumhe in sab ka total bill calculate karna hai, toh tum `reduce` use kar ke total ₹450 nikal sakte ho.
 
 ---
 
 ### Summary:
+- `Map`: Tumhari list ke sab items ko modify karta hai. (Jaise 10% discount lagana)
+- `Filter`: List me se sirf kuch specific items ko select karta hai. (Jaise "a" se shuru hone wale fruits)
+- `Reduce`: List ke sabhi items ka ek combined value deta hai. (Jaise total bill calculation)
 
-- **Map**: Array ke har element ko transform karta hai.
-- **Filter**: Array ke elements ko filter karta hai based on a condition.
-- **Reduce**: Ek array ko ek single value mein reduce karta hai.
-
----
-
-# Map, Filter, and Reduce in JavaScript
-
-*Here begins the English explanation of what was written above.*
-
-## 1. Map
-
-`map` is a method that creates a new array by applying a given function to each element of the original array.
-
-### Example:
-```js
-const numbers = [1, 2, 3];
-const doubled = numbers.map(num => num * 2);
-console.log(doubled); // [2, 4, 6]
-```
+Aise real-life example ke through tum `map`, `filter`, aur `reduce` easily samajh sakte ho!
 
 ---
 
-## 2. Filter
+# Map, Reduce, and Filter in JavaScript
 
-`filter` is a method that creates a new array with elements that pass the condition defined in the provided function.
+### `Map`, `Reduce`, and `Filter` in English with Real-Life Examples:
 
-### Example:
+#### 1. **Map**:
+When you want to modify all items in a list, you use the `map` function. For example, let’s say you went to the supermarket and you have a list of items (e.g. milk, bread, chips). You want to calculate the price of each item with a 10% discount.
+
 ```js
-const numbers = [1, 2, 3, 4, 5];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
-console.log(evenNumbers); // [2, 4]
+const items = [100, 200, 150]; // Prices in Rs
+const discountedPrices = items.map(item => item * 0.9);
+console.log(discountedPrices); // [90, 180, 135]
 ```
+
+**Real-life Example**:
+At the supermarket, you bought milk (₹100), bread (₹200), and chips (₹150). Now you want to calculate the price of each item with a 10% discount. Using `map`, you apply this discount to each item and get the new prices.
 
 ---
 
-## 3. Reduce
+#### 2. **Filter**:
+You use `filter` when you want to filter items in a list based on some condition. For example, you have a list of fruits, and you only want the fruits that start with "a".
 
-`reduce` is a method that reduces an array to a single value by applying a function that accumulates the result of each element.
-
-### Example:
 ```js
-const numbers = [1, 2, 3, 4];
-const sum = numbers.reduce((total, num) => total + num, 0);
-console.log(sum); // 10
+const fruits = ['apple', 'banana', 'mango', 'kiwi'];
+const filteredFruits = fruits.filter(fruit => fruit.startsWith('a'));
+console.log(filteredFruits); // ['apple']
 ```
+
+**Real-life Example**:
+Imagine you go to a fruit shop where the shopkeeper has many fruits. You only want the fruits that start with "a", so you use `filter` to get just "apple".
+
+---
+
+#### 3. **Reduce**:
+`Reduce` is used when you want to combine elements of a list into a single value. For instance, imagine you went to a restaurant, and you want to calculate the total bill.
+
+```js
+const prices = [100, 200, 150];
+const totalBill = prices.reduce((total, price) => total + price, 0);
+console.log(totalBill); // 450
+```
+
+**Real-life Example**:
+You went to a restaurant and ordered milk (₹100), bread (₹200), and chips (₹150). To calculate the total bill, you can use `reduce` to get a total of ₹450.
 
 ---
 
 ### Summary:
+- **Map**: Modifies all items in your list. (Like applying a 10% discount)
+- **Filter**: Selects only specific items from the list. (Like fruits starting with "a")
+- **Reduce**: Provides a combined value of all items in the list. (Like calculating the total bill)
 
-- **Map**: Transforms each element of the array.
-- **Filter**: Filters elements based on a condition.
-- **Reduce**: Reduces an array to a single value.
+Through these real-life examples, you can easily understand `map`, `filter`, and `reduce`!
